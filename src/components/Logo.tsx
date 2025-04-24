@@ -1,0 +1,22 @@
+import React from 'react';
+import { Hexagon } from 'lucide-react';
+
+const Logo: React.FC = () => {
+  return (
+    <div className="flex items-center">
+      <Hexagon 
+        size={32} 
+        className="text-purple-600 mr-2 fill-purple-100" 
+        strokeWidth={1.5} 
+      />
+      <div className="flex flex-col">
+        <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">
+          Techigem
+        </span>
+        <span className="text-[10px] text-gray-500 -mt-1">Instagram Tools</span>
+      </div>
+    </div>
+  );
+};
+
+export default Logo;
